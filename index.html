@@ -19,7 +19,7 @@
   </head>
   <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="#">Rizki Darmawan</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,11 +48,12 @@
     </nav>
     <!-- akhir navbar -->
     <!-- Jumbotron -->
-    <section class="jumbotron text-center">
+    <section class="jumbotron text-center" id="welcome-section">
       <img src="img/paspoto.jpg" alt="Rizki Darmawan" width="200" height="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Rizki Darmawan</h1>
       <p class="lead"></p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <a href="https://github.com/rizdar" target="_blank" class="btn btn-dark btn-github" id="profile-link">Follow My Github <i class="bi bi-github"></i></a>
+      <svg class="wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
           fill-opacity="1"
@@ -89,7 +90,7 @@
     <!-- akhir about -->
 
     <!-- Project -->
-    <section id="project">
+    <section id="projects">
       <div class="container">
         <div class="row text-center">
           <div class="col mb-3">
@@ -97,39 +98,47 @@
           </div>
           <div class="row justify-content-center">
             <div class="col-md-4 mb-3">
-              <div class="card" data-aos="flip-left">
-                <img src="img/Project/1.jpg" class="card-img-top" alt="satu" />
+              <div class="card project-tile" data-aos="flip-left">
+                <img src="img/Project/twice.png" class="card-img-top" alt="satu" />
                 <div class="card-body">
+                  <h5 class="card-title">Twice Tribute Page</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://codepen.io/rizdar96/pen/wvqpJew" target="_blank" class="btn btn-primary">Go to project &raquo;</a>
                 </div>
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
-                <img src="img/Project/2.jpg" class="card-img-top" alt="dua" />
+              <div class="card project-tile" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
+                <img src="img/Project/twice-form.png" class="card-img-top" alt="dua" />
                 <div class="card-body">
+                  <h5 class="card-title">Twice Survey Form</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://rizdar.github.io/twice-survey-form/" target="_blank" class="btn btn-primary">Go to project &raquo;</a>
                 </div>
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
-                <img src="img/Project/3.jpg" class="card-img-top" alt="tiga" />
+              <div class="card project-tile" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
+                <img src="img/Project/technical-documentation.png" class="card-img-top" alt="tiga" />
                 <div class="card-body">
+                  <h5 class="card-title">Techinacal Documentation</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://rizdar.github.io/fcc-technical-documentation/" target="_blank" class="btn btn-primary">Go to project &raquo;</a>
                 </div>
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
-                <img src="img/Project/4.jpg" class="card-img-top" alt="empat" />
+              <div class="card project-tile" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
+                <img src="img/Project/landing-page.png" class="card-img-top" alt="empat" />
                 <div class="card-body">
+                  <h5 class="card-title">Landing Page</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://rizdar.github.io/landing-page-css-grid/" target="_blank" class="btn btn-primary">Go to project &raquo;</a>
                 </div>
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
+              <div class="card project-tile" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
                 <img src="img/Project/5.jpg" class="card-img-top" alt="lima" />
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -283,5 +292,6 @@
       gsap.from('.display-4', { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: 'back' });
     </script>
     <script src="script.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
